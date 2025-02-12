@@ -5,7 +5,9 @@
 <p align="center" width="100%">
 <!---->
 </p> 
-![HiEndMAE](img/framework.jpg)
+
+
+![HiEndMAE](img/framework.png)
 
 
 
