@@ -166,7 +166,7 @@ def load_hyspark(num_classes):
     return model
  
 
-def load_dense_mae_10k(num_classes):
+def load_hi_end_mae_10k(num_classes):
     model = UNETR(
         in_channels=1,
         out_channels=num_classes,
@@ -182,7 +182,7 @@ def load_dense_mae_10k(num_classes):
         dropout_rate=0.0,
         qkv_bias=True
         )
-    model_dict = torch.load("./ckpt/dense_mae_10k.pth")['state_dict']
+    model_dict = torch.load("./ckpt/hi_end_mae_10k.pth")['state_dict']
     pretrained_dict = {}
     pretrained_dict["vit.patch_embedding.patch_embeddings.1.weight"] = model_dict["module.encoder.patch_embed.proj.weight"].flatten(1)
     pretrained_dict["vit.patch_embedding.patch_embeddings.1.bias"] = model_dict["module.encoder.patch_embed.proj.bias"]

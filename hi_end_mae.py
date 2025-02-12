@@ -4,7 +4,7 @@ import numpy as np
 from timm.models.layers.helpers import to_3tuple
 
 
-__all__ = ["DenseMAE"]
+__all__ = ["HiEndMAE"]
 
 def build_3d_sincos_position_embedding(grid_size, embed_dim, num_tokens=1, temperature=10000.):
     grid_size = to_3tuple(grid_size)
@@ -114,7 +114,7 @@ class PatchEmbed3D(nn.Module):
         return x
 
 
-class DenseMAE(nn.Module):
+class HiEndMAE(nn.Module):
 
     def __init__(self,
                  encoder,
@@ -238,21 +238,21 @@ class DenseMAE(nn.Module):
         else:
             return loss
 
-def build_vit_large_dense_mae_p12_3d(args):
+def build_vit_large_hi_end_mae_p12_3d(args):
     from networks.vit import vit_large_patch12_96, decoder_large_patch12_96
-    model = DenseMAE(args=args, encoder=vit_large_patch12_96, decoder=decoder_large_patch12_96)
+    model = HiEndMAE(args=args, encoder=vit_large_patch12_96, decoder=decoder_large_patch12_96)
     print(model)
     return model
 
 
-def build_vit_base_dense_mae_p16_3d(args):
+def build_vit_base_hi_end_mae_p16_3d(args):
     from networks.vit import vit_base_patch16_96, decoder_base_patch16_96
-    model = DenseMAE(args=args, encoder=vit_base_patch16_96, decoder=decoder_base_patch16_96)
+    model = HiEndMAE(args=args, encoder=vit_base_patch16_96, decoder=decoder_base_patch16_96)
     print(model)
     return model
 
-def build_vit_large_dense_mae_p16_3d(args):
+def build_vit_large_hi_end_mae_p16_3d(args):
     from networks.vit import vit_large_patch16_96, decoder_large_patch16_96
-    model = DenseMAE(args=args, encoder=vit_large_patch16_96, decoder=decoder_large_patch16_96)
+    model = HiEndMAE(args=args, encoder=vit_large_patch16_96, decoder=decoder_large_patch16_96)
     print(model)
     return model

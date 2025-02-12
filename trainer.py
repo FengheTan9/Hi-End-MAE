@@ -6,7 +6,7 @@ import torch
 import torch.nn as nn
 from torch.utils.data import DataLoader
 from dataloader.med_datasets import LargeMedicalDataSets
-from dense_mae_3d import build_vit_large_dense_mae_p12_3d, build_vit_base_dense_mae_p16_3d, build_vit_large_dense_mae_p16_3d
+from hi_end_mae import build_vit_large_hi_end_mae_p12_3d, build_vit_base_hi_end_mae_p16_3d, build_vit_large_hi_end_mae_p16_3d
 import torch.distributed as dist
 from torch.nn.parallel import DistributedDataParallel as DDP
 
@@ -29,12 +29,12 @@ class AverageMeter(object):
 
 
 
-class DenseMAETrainer(nn.Module):
+class HiEndMAETrainer(nn.Module):
 
     def __init__(self, args):
         super().__init__()
         self.args = args
-        self.model_name = 'DenseMAE'
+        self.model_name = 'HiEndMAE'
         dist.init_process_group('nccl', init_method='env://')
         rank = dist.get_rank()   
         local_rank = os.environ['LOCAL_RANK']
@@ -63,12 +63,12 @@ class DenseMAETrainer(nn.Module):
     def build_model(self):
         args = self.args
 
-        if args.model == "dense_mae_vit_large_12p":
-            model = build_vit_large_dense_mae_p12_3d(args=args).to(args.local_rank)
-        elif args.model == "dense_mae_vit_base_16p":
-            model = build_vit_base_dense_mae_p16_3d(args=args).to(args.local_rank) 
-        elif args.model == "dense_mae_vit_large_16p":
-            model = build_vit_large_dense_mae_p16_3d(args=args).to(args.local_rank) 
+        if args.model == "hi_end_mae_vit_large_12p":
+            model = build_vit_large_hi_end_mae_p12_3d(args=args).to(args.local_rank)
+        elif args.model == "hi_end_mae_vit_base_16p":
+            model = build_vit_base_hi_end_mae_p16_3d(args=args).to(args.local_rank) 
+        elif args.model == "hi_end_mae_vit_large_16p":
+            model = build_vit_large_hi_end_mae_p16_3d(args=args).to(args.local_rank) 
         else:
             model = None
         self.model = DDP(model, device_ids=[args.local_rank], output_device=args.local_rank)

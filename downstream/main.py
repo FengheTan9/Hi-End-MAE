@@ -29,7 +29,7 @@ from monai.losses import DiceCELoss, DiceLoss
 from monai.metrics import DiceMetric
 from monai.transforms import Activations, AsDiscrete, Compose
 from monai.utils.enums import MetricReduction
-from factory import load_SwinUNETR, load_TransVW, load_GVSL, load_UniMiss, load_prlv2, load_VoCo, load_ModelsGenesis, load_vox2vec, load_dense_mae_10k, load_hyspark, load_spark
+from factory import load_SwinUNETR, load_TransVW, load_GVSL, load_UniMiss, load_prlv2, load_VoCo, load_ModelsGenesis, load_vox2vec, load_hi_end_mae_10k, load_hyspark, load_spark
 
 def get_args(args):
     if args.model == "SwinUNETR":
@@ -52,8 +52,8 @@ def get_args(args):
         model = load_spark(args.out_channels)
     elif args.model == "hyspark":
         model = load_hyspark(args.out_channels)
-    elif args.model == "DenseMAE":
-        model = load_dense_mae_10k(args.out_channels)
+    elif args.model == "HiEndMAE":
+        model = load_hi_end_mae_10k(args.out_channels)
     else:
         model = None
     return args, model
@@ -64,7 +64,7 @@ parser.add_argument("--checkpoint", default=None, help="start training from save
 parser.add_argument(
     "--model",
     default="",
-    choices=["SwinUNETR", "TransVW", "GVSL", "UniMiss", "prlv2", "VoCo", "ModelsGenesis", "DenseMAE", "spark", "vox2vec",  "hyspark"],
+    choices=["SwinUNETR", "TransVW", "GVSL", "UniMiss", "prlv2", "VoCo", "ModelsGenesis", "HiEndMAE", "spark", "vox2vec",  "hyspark"],
 )
 parser.add_argument("--logdir", default="", type=str, help="directory to save the tensorboard logs")
 parser.add_argument("--data", default="btcv", choices=["amos", "word", "flare22", "btcv", "ctorg", "sliver"], help="dataset")
