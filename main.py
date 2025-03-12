@@ -56,7 +56,7 @@ if __name__ == '__main__':
     for k,v in sorted(vars(args).items()):
         print(k,'=',v)
     seed_torch(args.seed)
-    trainer = DenseMAETrainer(args=args)
+    trainer = HiEndMAETrainer(args=args)
 
     trainer.run()
     
