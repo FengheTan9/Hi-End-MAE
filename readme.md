@@ -47,8 +47,8 @@
 
 
 # News
-**[2024/08] Hi-End-MAE accepted by Medical Image Analyses (MedIA'25) ! 🥰**
-**[2024/02/14] Paper and code released !**
+- **[2024/08] Hi-End-MAE accepted by Medical Image Analysis (MedIA'25) ! 🥰**
+- **[2024/02] Paper and code released !**
 
 
 
