@@ -42,12 +42,12 @@
 <br>
 <br>
 
-​                                                                              [![arXiv](https://img.shields.io/badge/arxiv-2408.08070-b31b1b)](https://arxiv.org/pdf/2408.08070.pdf)   [![github](https://img.shields.io/badge/github-HiEndMAE-purple)](https://github.com/FengheTan9/Hi-End-MAE)    <a href="#LICENSE--citation"><img alt="License: Apache2.0" src="https://img.shields.io/badge/LICENSE-Apache%202.0-blue.svg"/></a>
+​                                                                              [![arXiv](https://img.shields.io/badge/arxiv-2408.08070-b31b1b)](https://arxiv.org/pdf/2502.08347.pdf)   [![github](https://img.shields.io/badge/github-HiEndMAE-black)](https://github.com/FengheTan9/Hi-End-MAE)    <a href="#LICENSE--citation"><img alt="License: Apache2.0" src="https://img.shields.io/badge/LICENSE-Apache%202.0-blue.svg"/></a>
 
 
 
 # News
-
+**[2024/08] Hi-End-MAE accepted by Medical Image Analyses (MedIA'25) ! 🥰**
 **[2024/02/14] Paper and code released !**
 
 
