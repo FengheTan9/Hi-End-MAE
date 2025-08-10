@@ -47,12 +47,19 @@
 
 
 # News
-- **[2024/08] Hi-End-MAE accepted by Medical Image Analysis (MedIA'25) ! 🥰**
-- **[2024/02] Paper and code released !**
+- **[2024/08] 🚀 Hi-End-MAE accepted by Medical Image Analysis (MedIA'25) 🥰**
+- **[2024/08] 🚀 Weights released ! Very strong, enjoy it 😎**
+- **[2024/02] 🚀 Paper and code released !**
 
 
 
 ## Getting Started
+
+### Download weights
+
+|   Name   |  Resolution  |  Intensities  |      Spacing       |                           Weights                            |
+| :------: | :----------: | :-----------: | :----------------: | :----------------------------------------------------------: |
+| Hi-End-MAE (ViT-p12/1536) | 96x96x96 | [-175, 250] | 1.5x1.5x1.5 mm | [Google Drive (1.37GB)](https://drive.google.com/file/d/1pjQVAhW0S5d_zD-X99aBq4WvlpDFcjGQ/view?usp=sharing) | [BaiduDisk (pwd: tang)](https://pan.baidu.com/s/1A6Stb8h15XsjqnT7lalnAg) |
 
 ### Prepare Environment
 
