@@ -47,9 +47,9 @@
 
 
 # News
-- **[2024/08] 🚀 Hi-End-MAE accepted by Medical Image Analysis (MedIA'25) 🥰**
-- **[2024/08] 🚀 Weights released ! Very strong, enjoy it 😎**
-- **[2024/02] 🚀 Paper and code released !**
+- **[2025/08] 🚀 Hi-End-MAE accepted by Medical Image Analysis (MedIA'25) 🥰**
+- **[2025/08] 🚀 Weights released ! Very strong, enjoy it 😎**
+- **[2025/02] 🚀 Paper and code released !**
 
 
 
