@@ -136,6 +136,16 @@ If the code, paper and weights help your research, please cite:
   journal={arXiv preprint arXiv:2502.08347},
   year={2025}
 }
+
+@article{tang2025hi,
+  title={Hi-End-MAE: Hierarchical encoder-driven masked autoencoders are stronger vision learners for medical image segmentation},
+  author={Tang, Fenghe and Yao, Qingsong and Ma, Wenxin and Wu, Chenxu and Jiang, Zihang and Zhou, S Kevin},
+  journal={Medical Image Analysis},
+  pages={103770},
+  year={2026},
+  publisher={Elsevier}
+}
+
 ```
 
 
