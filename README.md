@@ -15,15 +15,15 @@
     <span class="author-block">
     <a href="https://scholar.google.com/citations?user=x1pODsMAAAAJ&hl=en" target="_blank">Fenghe Tang</a><sup>1,2</sup>,</span>
     <span class="author-block">
-    <a target="_blank">Qingsong Yao</a><sup>3</sup>,</span>
+    <a href="https://scholar.google.com/citations?user=CMiRzlAAAAAJ&hl=en" target="_blank">Qingsong Yao</a><sup>3</sup>,</span>
     <span class="author-block">
-    <a target="_blank">Wenxin Ma</a><sup>1,2</sup>,</span>
+    <a href="https://scholar.google.com/citations?user=r0-tZ8cAAAAJ&hl=en" target="_blank">Wenxin Ma</a><sup>1,2</sup>,</span>
     <span class="author-block">
-    <a target="_blank">Chenxu Wu</a><sup>1,2</sup>,</span>
+    <a href="https://scholar.google.com/citations?user=tI39ThgAAAAJ&hl=en" target="_blank">Chenxu Wu</a><sup>1,2</sup>,</span>
     <span class="author-block">
     <a href="https://scholar.google.com/citations?user=Wo8tMSMAAAAJ&hl=en" target="_blank">Zihang Jiang</a><sup>1,2</sup>,</span>
     <span class="author-block">
-    <a href="https://scholar.google.com/citations?user=8eNm2GMAAAAJ&hl=en" target="_blank">S.Kevin Zhou</a><sup>1,2</sup>
+    <a href="https://scholar.google.com/citations?user=8eNm2GMAAAAJ&hl=en" target="_blank">S .Kevin Zhou</a><sup>1,2</sup>
     </span>
 </div>
 
