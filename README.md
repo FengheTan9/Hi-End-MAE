@@ -135,7 +135,7 @@ If the code, paper and weights help your research, please cite:
   author={Tang, Fenghe and Yao, Qingsong and Ma, Wenxin and Wu, Chenxu and Jiang, Zihang and Zhou, S Kevin},
   journal={Medical Image Analysis},
   pages={103770},
-  year={2026},
+  year={2025},
   publisher={Elsevier}
 }
 
